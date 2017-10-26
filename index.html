@@ -9,10 +9,13 @@
 <a-scene>
   <a-assets>
     <img id="vr" src="vr.png">
+    <audio id="sound effect_1" src="sugar-plum-fairy.mp3"></audio>
+    <audio id="sound effect_2" src="STE-000.mp3"></audio>
+    <audio id="sound effect_3" src="Beethoven.mp3"></audio>
   </a-assets>
-  <a-sphere position="0 0.75 -15" radius="1.25" color="#EF2D5E"></a-sphere>
-  <a-box position="-15 0.75 1" color="#4CC3D9" width="1" height="1"  depth="1"></a-box>
-  <a-cylinder position="15 0.75 1" color="#FFC65D" radius="0.5" height="1.5"></a-cylinder>
+  <a-sphere position="0 0.75 -15" sound="src: #sound effect_2; autoplay: true; loop: true" radius="1.25" color="#EF2D5E"></a-sphere>
+  <a-box position="-15 0.75 1" sound="src: #sound effect_2; autoplay: true; loop: true" color="#4CC3D9" width="1" height="1"  depth="1"></a-box>
+  <a-cylinder position="15 0.75 1"sound="src: #sound effect_3; autoplay: true; loop: true" color="#FFC65D" radius="0.5" height="1.5"></a-cylinder>
   <a-plane width="40" height="40" rotation="-90 0 0" src="#vr"></a-plane>
   <a-sky color="#030303"></a-sky>
   <a-entity position="0 0 0">
